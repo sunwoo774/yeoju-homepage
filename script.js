@@ -47,4 +47,22 @@
       if (e.key === 'Escape') closeLightbox();
     });
   }
+
+  /* 현장 기록 섹션: 스크롤 진입 시 절제된 등장 효과 */
+  var revealItems = document.querySelectorAll('.case, .svc-card, .hero-proof > div');
+  if ('IntersectionObserver' in window && revealItems.length) {
+    revealItems.forEach(function(item, index){
+      item.classList.add('will-reveal');
+      item.style.setProperty('--reveal-delay', Math.min(index % 4, 3) * 70 + 'ms');
+    });
+    var observer = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealItems.forEach(function(item){ observer.observe(item); });
+  }
 })();
