@@ -1,0 +1,25 @@
+.yj-origin{margin:18px 0 6px;padding:16px 18px;border:2px solid #f2c94c;background:#fffbea;border-radius:16px;max-width:560px}
+.yj-origin strong{display:block;font-size:18px;color:#13264a;margin-bottom:4px}
+.yj-origin p{font-size:15px;line-height:1.7;color:#3b4250;margin:0 0 8px}
+.yj-origin a{font-weight:700;color:#13264a;text-decoration:underline}
+#yeoju-fees .yj-fee-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin-top:8px}
+#yeoju-fees .yj-fee{background:#fff;border:1px solid #e4e7ec;border-radius:16px;padding:18px 14px;text-align:center}
+#yeoju-fees .yj-fee span{display:block;font-size:15px;font-weight:700;color:#596273;margin-bottom:6px}
+#yeoju-fees .yj-fee b{display:block;font-size:24px;color:#13264a;white-space:nowrap}
+#yeoju-fees .yj-fee b small{font-size:14px;margin-left:2px}
+#yeoju-fees .yj-fee.more b{font-size:17px;line-height:1.5}
+#yeoju-fees .yj-fee-note{margin-top:16px;font-size:14px;line-height:1.8;color:#596273}
+#yeoju-fees .yj-steps{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin-top:20px}
+#yeoju-fees .yj-steps div{background:#fff;border:1px solid #e4e7ec;border-radius:14px;padding:16px;font-size:15px;line-height:1.7;color:#3b4250}
+#yeoju-fees .yj-steps b{display:block;color:#13264a;margin-bottom:2px}
+@media(max-width:900px){#yeoju-fees .yj-fee-grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:760px){#yeoju-fees .yj-fee-grid{grid-template-columns:repeat(2,minmax(0,1fr))}#yeoju-fees .yj-steps{grid-template-columns:1fr}.yj-origin strong{font-size:17px}}
+#yeoju-fees .yj-cost-title{font-size:20px;font-weight:800;color:#13264a;margin:30px 0 6px}
+#yeoju-fees .yj-cost-sub{font-size:15px;color:#596273;margin:0 0 14px;line-height:1.7}
+#yeoju-fees .yj-cost{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+#yeoju-fees .yj-cost div{background:#fff;border:1px solid #e4e7ec;border-radius:16px;padding:18px}
+#yeoju-fees .yj-cost h4{font-size:16px;font-weight:700;color:#596273;margin:0 0 8px}
+#yeoju-fees .yj-cost .f{display:block;font-size:20px;font-weight:800;color:#13264a;margin-bottom:8px}
+#yeoju-fees .yj-cost .f em{font-style:normal;color:#b07a00}
+#yeoju-fees .yj-cost p{font-size:15px;line-height:1.7;color:#3b4250;margin:0}
+@media(max-width:760px){#yeoju-fees .yj-cost{grid-template-columns:1fr}}
